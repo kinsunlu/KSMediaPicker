@@ -1,0 +1,22 @@
+/* 
+  KSMediaPicker.strings
+  KSMediaPickerDemo
+
+  Created by kinsun on 2019/4/29.
+  Copyright © 2019年 kinsun. All rights reserved.
+*/
+
+NEXT = "下一步";
+
+IMAGE_PICKER_PHOTOS = "照片";
+IMAGE_PICKER_CAMERA = "照相机";
+IMAGE_PICKER_MICROPHONE = "麦克风";
+IMAGE_PICKER_NONAUTHORITY_TITLE_FORMAT = "没有打开“%@”访问权限";
+IMAGE_PICKER_NONAUTHORITY_TIP_FORMAT = "请进入“设置”-“%@”打开%@开关";
+IMAGE_PICKER_NONAUTHORITY_GO_SETTING = "去设置";
+
+MEDIA_PICKER_SCALE_ASPECT_FIT = "留白";
+MEDIA_PICKER_SCALE_ASPECT_FILL = "充满";
+MEDIA_PICKER_ALBUM_TAB_TITLE = "相册";
+MEDIA_PICKER_CAMERA_TAB_TITLE = "拍照";
+MEDIA_PICKER_VIDEOCORDER_TAB_TITLE = "拍视频";

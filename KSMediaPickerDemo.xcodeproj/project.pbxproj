@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D2105A022827BB7005A8BDE /* KSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21059F22827BB7005A8BDE /* KSButton.swift */; };
+		6D2105A2228282CA005A8BDE /* KSBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2105A1228282CA005A8BDE /* KSBorderButton.swift */; };
+		6D2105A52282AB8B005A8BDE /* KSVideoPlayerLiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2105A32282AB8B005A8BDE /* KSVideoPlayerLiteView.m */; };
+		6D2105AA2282AF76005A8BDE /* KSMediaPickerSelectIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2105A92282AF76005A8BDE /* KSMediaPickerSelectIndicator.swift */; };
+		6D2105AE2282B55A005A8BDE /* KSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2105AC2282B55A005A8BDE /* KSPageControl.m */; };
+		6DCBC62F2276CF3500E5EC6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC62E2276CF3500E5EC6D /* AppDelegate.swift */; };
+		6DCBC6312276CF3500E5EC6D /* MDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6302276CF3500E5EC6D /* MDViewController.swift */; };
+		6DCBC6362276CF3500E5EC6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCBC6352276CF3500E5EC6D /* Assets.xcassets */; };
+		6DCBC6392276CF3500E5EC6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DCBC6372276CF3500E5EC6D /* LaunchScreen.storyboard */; };
+		6DCBC6592276D00800E5EC6D /* KSMediaPickerHandlerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6422276D00800E5EC6D /* KSMediaPickerHandlerController.swift */; };
+		6DCBC65A2276D00800E5EC6D /* KSMediaPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6432276D00800E5EC6D /* KSMediaPickerController.swift */; };
+		6DCBC65B2276D00800E5EC6D /* KSMediaPickerViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6442276D00800E5EC6D /* KSMediaPickerViewerController.swift */; };
+		6DCBC65C2276D00800E5EC6D /* KSMediaPickerOutputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6462276D00800E5EC6D /* KSMediaPickerOutputModel.swift */; };
+		6DCBC65D2276D00800E5EC6D /* KSMediaPickerItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6472276D00800E5EC6D /* KSMediaPickerItemModel.swift */; };
+		6DCBC65E2276D00800E5EC6D /* KSMediaPickerAlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6482276D00800E5EC6D /* KSMediaPickerAlbumModel.swift */; };
+		6DCBC65F2276D00800E5EC6D /* KSMediaPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC64A2276D00800E5EC6D /* KSMediaPickerCollectionView.m */; };
+		6DCBC6602276D00800E5EC6D /* KSMediaPickerViewImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC64B2276D00800E5EC6D /* KSMediaPickerViewImageCell.swift */; };
+		6DCBC6612276D00800E5EC6D /* KSMediaPickerCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC64C2276D00800E5EC6D /* KSMediaPickerCameraView.swift */; };
+		6DCBC6622276D00800E5EC6D /* KSMediaPickerCameraToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC64D2276D00800E5EC6D /* KSMediaPickerCameraToolBar.swift */; };
+		6DCBC6632276D00800E5EC6D /* KSMediaPickerPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC64E2276D00800E5EC6D /* KSMediaPickerPreviewView.swift */; };
+		6DCBC6642276D00800E5EC6D /* KSMediaPickerViewAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6502276D00800E5EC6D /* KSMediaPickerViewAlbumCell.swift */; };
+		6DCBC6652276D00800E5EC6D /* KSMediaPickerViewVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6512276D00800E5EC6D /* KSMediaPickerViewVideoCell.swift */; };
+		6DCBC6662276D00800E5EC6D /* KSMediaViewerVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6522276D00800E5EC6D /* KSMediaViewerVideoCell.swift */; };
+		6DCBC6672276D00800E5EC6D /* KSMediaViewerPictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6532276D00800E5EC6D /* KSMediaViewerPictureCell.swift */; };
+		6DCBC6682276D00800E5EC6D /* KSMediaPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6542276D00800E5EC6D /* KSMediaPickerView.swift */; };
+		6DCBC6692276D00800E5EC6D /* KSMediaPickerRECButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6552276D00800E5EC6D /* KSMediaPickerRECButton.swift */; };
+		6DCBC66A2276D00800E5EC6D /* KSMediaPickerNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6562276D00800E5EC6D /* KSMediaPickerNavigationView.swift */; };
+		6DCBC66B2276D00800E5EC6D /* KSMediaPickerHandlerBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6572276D00800E5EC6D /* KSMediaPickerHandlerBaseCell.swift */; };
+		6DCBC66C2276D00800E5EC6D /* KSMediaPickerViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6582276D00800E5EC6D /* KSMediaPickerViewerView.swift */; };
+		6DCBC67D2276D13300E5EC6D /* KSMediaViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6732276D13300E5EC6D /* KSMediaViewerController.m */; };
+		6DCBC67E2276D13300E5EC6D /* KSMediaViewerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6772276D13300E5EC6D /* KSMediaViewerTransition.m */; };
+		6DCBC67F2276D13300E5EC6D /* KSMediaViewerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6792276D13300E5EC6D /* KSMediaViewerCell.m */; };
+		6DCBC6802276D13300E5EC6D /* KSMediaViewerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC67A2276D13300E5EC6D /* KSMediaViewerView.m */; };
+		6DCBC68D2276D3B000E5EC6D /* KSVideoPlayerBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6892276D3B000E5EC6D /* KSVideoPlayerBaseView.m */; };
+		6DCBC68E2276D3B000E5EC6D /* KSVideoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC68B2276D3B000E5EC6D /* KSVideoLayer.m */; };
+		6DCBC6922276D65B00E5EC6D /* KSSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6912276D65B00E5EC6D /* KSSegmentedControl.m */; };
+		6DCBC6972276D99C00E5EC6D /* KSMediaPickerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6962276D99C00E5EC6D /* KSMediaPickerScrollView.m */; };
+		6DCBC69F2276DAAC00E5EC6D /* KSTriangleIndicatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6992276DAAC00E5EC6D /* KSTriangleIndicatorButton.m */; };
+		6DCBC6A02276DAAC00E5EC6D /* KSIndicatorLabelControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC69A2276DAAC00E5EC6D /* KSIndicatorLabelControl.m */; };
+		6DCBC6A12276DAAC00E5EC6D /* KSTriangleDisclosureIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC69C2276DAAC00E5EC6D /* KSTriangleDisclosureIndicator.m */; };
+		6DCBC6A52276E01300E5EC6D /* KSMediaPicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DCBC6A72276E01300E5EC6D /* KSMediaPicker.strings */; };
+		6DCBC6AA2276E0DC00E5EC6D /* KSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCBC6A92276E0DC00E5EC6D /* KSExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D21059F22827BB7005A8BDE /* KSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSButton.swift; sourceTree = "<group>"; };
+		6D2105A1228282CA005A8BDE /* KSBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSBorderButton.swift; sourceTree = "<group>"; };
+		6D2105A32282AB8B005A8BDE /* KSVideoPlayerLiteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVideoPlayerLiteView.m; sourceTree = "<group>"; };
+		6D2105A42282AB8B005A8BDE /* KSVideoPlayerLiteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVideoPlayerLiteView.h; sourceTree = "<group>"; };
+		6D2105A92282AF76005A8BDE /* KSMediaPickerSelectIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSMediaPickerSelectIndicator.swift; sourceTree = "<group>"; };
+		6D2105AC2282B55A005A8BDE /* KSPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPageControl.m; sourceTree = "<group>"; };
+		6D2105AD2282B55A005A8BDE /* KSPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPageControl.h; sourceTree = "<group>"; };
+		6D2105AF2282B959005A8BDE /* KSSwiftBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSSwiftBridgingHeader.h; sourceTree = "<group>"; };
+		6DCBC62B2276CF3500E5EC6D /* KSMediaPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSMediaPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCBC62E2276CF3500E5EC6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DCBC6302276CF3500E5EC6D /* MDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDViewController.swift; sourceTree = "<group>"; };
+		6DCBC6352276CF3500E5EC6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DCBC6382276CF3500E5EC6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DCBC63A2276CF3500E5EC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DCBC6422276D00800E5EC6D /* KSMediaPickerHandlerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerHandlerController.swift; sourceTree = "<group>"; };
+		6DCBC6432276D00800E5EC6D /* KSMediaPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerController.swift; sourceTree = "<group>"; };
+		6DCBC6442276D00800E5EC6D /* KSMediaPickerViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerViewerController.swift; sourceTree = "<group>"; };
+		6DCBC6462276D00800E5EC6D /* KSMediaPickerOutputModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerOutputModel.swift; sourceTree = "<group>"; };
+		6DCBC6472276D00800E5EC6D /* KSMediaPickerItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerItemModel.swift; sourceTree = "<group>"; };
+		6DCBC6482276D00800E5EC6D /* KSMediaPickerAlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerAlbumModel.swift; sourceTree = "<group>"; };
+		6DCBC64A2276D00800E5EC6D /* KSMediaPickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaPickerCollectionView.m; sourceTree = "<group>"; };
+		6DCBC64B2276D00800E5EC6D /* KSMediaPickerViewImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerViewImageCell.swift; sourceTree = "<group>"; };
+		6DCBC64C2276D00800E5EC6D /* KSMediaPickerCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerCameraView.swift; sourceTree = "<group>"; };
+		6DCBC64D2276D00800E5EC6D /* KSMediaPickerCameraToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerCameraToolBar.swift; sourceTree = "<group>"; };
+		6DCBC64E2276D00800E5EC6D /* KSMediaPickerPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerPreviewView.swift; sourceTree = "<group>"; };
+		6DCBC64F2276D00800E5EC6D /* KSMediaPickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaPickerCollectionView.h; sourceTree = "<group>"; };
+		6DCBC6502276D00800E5EC6D /* KSMediaPickerViewAlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerViewAlbumCell.swift; sourceTree = "<group>"; };
+		6DCBC6512276D00800E5EC6D /* KSMediaPickerViewVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerViewVideoCell.swift; sourceTree = "<group>"; };
+		6DCBC6522276D00800E5EC6D /* KSMediaViewerVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaViewerVideoCell.swift; sourceTree = "<group>"; };
+		6DCBC6532276D00800E5EC6D /* KSMediaViewerPictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaViewerPictureCell.swift; sourceTree = "<group>"; };
+		6DCBC6542276D00800E5EC6D /* KSMediaPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerView.swift; sourceTree = "<group>"; };
+		6DCBC6552276D00800E5EC6D /* KSMediaPickerRECButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerRECButton.swift; sourceTree = "<group>"; };
+		6DCBC6562276D00800E5EC6D /* KSMediaPickerNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerNavigationView.swift; sourceTree = "<group>"; };
+		6DCBC6572276D00800E5EC6D /* KSMediaPickerHandlerBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerHandlerBaseCell.swift; sourceTree = "<group>"; };
+		6DCBC6582276D00800E5EC6D /* KSMediaPickerViewerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KSMediaPickerViewerView.swift; sourceTree = "<group>"; };
+		6DCBC6702276D0B600E5EC6D /* MDBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDBridgingHeader.h; sourceTree = "<group>"; };
+		6DCBC6732276D13300E5EC6D /* KSMediaViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerController.m; sourceTree = "<group>"; };
+		6DCBC6742276D13300E5EC6D /* KSMediaViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerController.h; sourceTree = "<group>"; };
+		6DCBC6762276D13300E5EC6D /* KSMediaViewerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerTransition.h; sourceTree = "<group>"; };
+		6DCBC6772276D13300E5EC6D /* KSMediaViewerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerTransition.m; sourceTree = "<group>"; };
+		6DCBC6792276D13300E5EC6D /* KSMediaViewerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerCell.m; sourceTree = "<group>"; };
+		6DCBC67A2276D13300E5EC6D /* KSMediaViewerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSMediaViewerView.m; sourceTree = "<group>"; };
+		6DCBC67B2276D13300E5EC6D /* KSMediaViewerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerCell.h; sourceTree = "<group>"; };
+		6DCBC67C2276D13300E5EC6D /* KSMediaViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSMediaViewerView.h; sourceTree = "<group>"; };
+		6DCBC6892276D3B000E5EC6D /* KSVideoPlayerBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVideoPlayerBaseView.m; sourceTree = "<group>"; };
+		6DCBC68A2276D3B000E5EC6D /* KSVideoPlayerBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVideoPlayerBaseView.h; sourceTree = "<group>"; };
+		6DCBC68B2276D3B000E5EC6D /* KSVideoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVideoLayer.m; sourceTree = "<group>"; };
+		6DCBC68C2276D3B000E5EC6D /* KSVideoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVideoLayer.h; sourceTree = "<group>"; };
+		6DCBC6902276D65B00E5EC6D /* KSSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSegmentedControl.h; sourceTree = "<group>"; };
+		6DCBC6912276D65B00E5EC6D /* KSSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSegmentedControl.m; sourceTree = "<group>"; };
+		6DCBC6942276D6FE00E5EC6D /* KSLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSLayout.h; sourceTree = "<group>"; };
+		6DCBC6952276D99C00E5EC6D /* KSMediaPickerScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSMediaPickerScrollView.h; sourceTree = "<group>"; };
+		6DCBC6962276D99C00E5EC6D /* KSMediaPickerScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSMediaPickerScrollView.m; sourceTree = "<group>"; };
+		6DCBC6992276DAAC00E5EC6D /* KSTriangleIndicatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTriangleIndicatorButton.m; sourceTree = "<group>"; };
+		6DCBC69A2276DAAC00E5EC6D /* KSIndicatorLabelControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSIndicatorLabelControl.m; sourceTree = "<group>"; };
+		6DCBC69B2276DAAC00E5EC6D /* KSTriangleDisclosureIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTriangleDisclosureIndicator.h; sourceTree = "<group>"; };
+		6DCBC69C2276DAAC00E5EC6D /* KSTriangleDisclosureIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTriangleDisclosureIndicator.m; sourceTree = "<group>"; };
+		6DCBC69D2276DAAC00E5EC6D /* KSIndicatorLabelControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSIndicatorLabelControl.h; sourceTree = "<group>"; };
+		6DCBC69E2276DAAC00E5EC6D /* KSTriangleIndicatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTriangleIndicatorButton.h; sourceTree = "<group>"; };
+		6DCBC6A22276DF9D00E5EC6D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		6DCBC6A62276E01300E5EC6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KSMediaPicker.strings; sourceTree = "<group>"; };
+		6DCBC6A82276E01500E5EC6D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/KSMediaPicker.strings"; sourceTree = "<group>"; };
+		6DCBC6A92276E0DC00E5EC6D /* KSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DCBC6282276CF3500E5EC6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D21059E22827B9C005A8BDE /* KSButton */ = {
+			isa = PBXGroup;
+			children = (
+				6D21059F22827BB7005A8BDE /* KSButton.swift */,
+				6D2105A1228282CA005A8BDE /* KSBorderButton.swift */,
+			);
+			path = KSButton;
+			sourceTree = "<group>";
+		};
+		6D2105AB2282B55A005A8BDE /* KSPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				6D2105AD2282B55A005A8BDE /* KSPageControl.h */,
+				6D2105AC2282B55A005A8BDE /* KSPageControl.m */,
+			);
+			path = KSPageControl;
+			sourceTree = "<group>";
+		};
+		6DCBC6222276CF3500E5EC6D = {
+			isa = PBXGroup;
+			children = (
+				6DCBC6932276D6EB00E5EC6D /* Source */,
+				6DCBC62D2276CF3500E5EC6D /* KSMediaPickerDemo */,
+				6DCBC62C2276CF3500E5EC6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DCBC62C2276CF3500E5EC6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC62B2276CF3500E5EC6D /* KSMediaPickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DCBC62D2276CF3500E5EC6D /* KSMediaPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC62E2276CF3500E5EC6D /* AppDelegate.swift */,
+				6DCBC6352276CF3500E5EC6D /* Assets.xcassets */,
+				6DCBC63A2276CF3500E5EC6D /* Info.plist */,
+				6DCBC6372276CF3500E5EC6D /* LaunchScreen.storyboard */,
+				6DCBC6702276D0B600E5EC6D /* MDBridgingHeader.h */,
+				6DCBC6302276CF3500E5EC6D /* MDViewController.swift */,
+			);
+			path = KSMediaPickerDemo;
+			sourceTree = "<group>";
+		};
+		6DCBC6402276D00800E5EC6D /* KSMediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC6412276D00800E5EC6D /* Controller */,
+				6DCBC6452276D00800E5EC6D /* Model */,
+				6DCBC6492276D00800E5EC6D /* View */,
+			);
+			path = KSMediaPicker;
+			sourceTree = "<group>";
+		};
+		6DCBC6412276D00800E5EC6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC6422276D00800E5EC6D /* KSMediaPickerHandlerController.swift */,
+				6DCBC6432276D00800E5EC6D /* KSMediaPickerController.swift */,
+				6DCBC6442276D00800E5EC6D /* KSMediaPickerViewerController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6DCBC6452276D00800E5EC6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC6462276D00800E5EC6D /* KSMediaPickerOutputModel.swift */,
+				6DCBC6472276D00800E5EC6D /* KSMediaPickerItemModel.swift */,
+				6DCBC6482276D00800E5EC6D /* KSMediaPickerAlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DCBC6492276D00800E5EC6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC64D2276D00800E5EC6D /* KSMediaPickerCameraToolBar.swift */,
+				6DCBC64C2276D00800E5EC6D /* KSMediaPickerCameraView.swift */,
+				6DCBC64F2276D00800E5EC6D /* KSMediaPickerCollectionView.h */,
+				6DCBC64A2276D00800E5EC6D /* KSMediaPickerCollectionView.m */,
+				6DCBC6572276D00800E5EC6D /* KSMediaPickerHandlerBaseCell.swift */,
+				6DCBC6562276D00800E5EC6D /* KSMediaPickerNavigationView.swift */,
+				6DCBC64E2276D00800E5EC6D /* KSMediaPickerPreviewView.swift */,
+				6DCBC6552276D00800E5EC6D /* KSMediaPickerRECButton.swift */,
+				6DCBC6952276D99C00E5EC6D /* KSMediaPickerScrollView.h */,
+				6DCBC6962276D99C00E5EC6D /* KSMediaPickerScrollView.m */,
+				6D2105A92282AF76005A8BDE /* KSMediaPickerSelectIndicator.swift */,
+				6DCBC6542276D00800E5EC6D /* KSMediaPickerView.swift */,
+				6DCBC6502276D00800E5EC6D /* KSMediaPickerViewAlbumCell.swift */,
+				6DCBC6582276D00800E5EC6D /* KSMediaPickerViewerView.swift */,
+				6DCBC64B2276D00800E5EC6D /* KSMediaPickerViewImageCell.swift */,
+				6DCBC6512276D00800E5EC6D /* KSMediaPickerViewVideoCell.swift */,
+				6DCBC6532276D00800E5EC6D /* KSMediaViewerPictureCell.swift */,
+				6DCBC6522276D00800E5EC6D /* KSMediaViewerVideoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DCBC6712276D13300E5EC6D /* KSMediaViewer */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC6722276D13300E5EC6D /* Controller */,
+				6DCBC6752276D13300E5EC6D /* Model */,
+				6DCBC6782276D13300E5EC6D /* View */,
+			);
+			path = KSMediaViewer;
+			sourceTree = "<group>";
+		};
+		6DCBC6722276D13300E5EC6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC6742276D13300E5EC6D /* KSMediaViewerController.h */,
+				6DCBC6732276D13300E5EC6D /* KSMediaViewerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6DCBC6752276D13300E5EC6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC6762276D13300E5EC6D /* KSMediaViewerTransition.h */,
+				6DCBC6772276D13300E5EC6D /* KSMediaViewerTransition.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DCBC6782276D13300E5EC6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC67B2276D13300E5EC6D /* KSMediaViewerCell.h */,
+				6DCBC6792276D13300E5EC6D /* KSMediaViewerCell.m */,
+				6DCBC67C2276D13300E5EC6D /* KSMediaViewerView.h */,
+				6DCBC67A2276D13300E5EC6D /* KSMediaViewerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DCBC6882276D39E00E5EC6D /* KSVideoPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC68C2276D3B000E5EC6D /* KSVideoLayer.h */,
+				6DCBC68B2276D3B000E5EC6D /* KSVideoLayer.m */,
+				6DCBC68A2276D3B000E5EC6D /* KSVideoPlayerBaseView.h */,
+				6DCBC6892276D3B000E5EC6D /* KSVideoPlayerBaseView.m */,
+				6D2105A42282AB8B005A8BDE /* KSVideoPlayerLiteView.h */,
+				6D2105A32282AB8B005A8BDE /* KSVideoPlayerLiteView.m */,
+			);
+			path = KSVideoPlayerView;
+			sourceTree = "<group>";
+		};
+		6DCBC68F2276D64E00E5EC6D /* KSSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC6902276D65B00E5EC6D /* KSSegmentedControl.h */,
+				6DCBC6912276D65B00E5EC6D /* KSSegmentedControl.m */,
+			);
+			path = KSSegmentedControl;
+			sourceTree = "<group>";
+		};
+		6DCBC6932276D6EB00E5EC6D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC6942276D6FE00E5EC6D /* KSLayout.h */,
+				6DCBC6A92276E0DC00E5EC6D /* KSExtension.swift */,
+				6D2105AF2282B959005A8BDE /* KSSwiftBridgingHeader.h */,
+				6D2105AB2282B55A005A8BDE /* KSPageControl */,
+				6D21059E22827B9C005A8BDE /* KSButton */,
+				6DCBC6982276DAAC00E5EC6D /* KSDisclosureIndicator */,
+				6DCBC6712276D13300E5EC6D /* KSMediaViewer */,
+				6DCBC68F2276D64E00E5EC6D /* KSSegmentedControl */,
+				6DCBC6882276D39E00E5EC6D /* KSVideoPlayerView */,
+				6DCBC6402276D00800E5EC6D /* KSMediaPicker */,
+				6DCBC6A72276E01300E5EC6D /* KSMediaPicker.strings */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6DCBC6982276DAAC00E5EC6D /* KSDisclosureIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				6DCBC69D2276DAAC00E5EC6D /* KSIndicatorLabelControl.h */,
+				6DCBC69A2276DAAC00E5EC6D /* KSIndicatorLabelControl.m */,
+				6DCBC69B2276DAAC00E5EC6D /* KSTriangleDisclosureIndicator.h */,
+				6DCBC69C2276DAAC00E5EC6D /* KSTriangleDisclosureIndicator.m */,
+				6DCBC69E2276DAAC00E5EC6D /* KSTriangleIndicatorButton.h */,
+				6DCBC6992276DAAC00E5EC6D /* KSTriangleIndicatorButton.m */,
+			);
+			path = KSDisclosureIndicator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DCBC62A2276CF3500E5EC6D /* KSMediaPickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DCBC63D2276CF3500E5EC6D /* Build configuration list for PBXNativeTarget "KSMediaPickerDemo" */;
+			buildPhases = (
+				6DCBC6272276CF3500E5EC6D /* Sources */,
+				6DCBC6282276CF3500E5EC6D /* Frameworks */,
+				6DCBC6292276CF3500E5EC6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSMediaPickerDemo;
+			productName = KSMediaPickerDemo;
+			productReference = 6DCBC62B2276CF3500E5EC6D /* KSMediaPickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DCBC6232276CF3500E5EC6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = kinsun;
+				TargetAttributes = {
+					6DCBC62A2276CF3500E5EC6D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6DCBC6262276CF3500E5EC6D /* Build configuration list for PBXProject "KSMediaPickerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 6DCBC6222276CF3500E5EC6D;
+			productRefGroup = 6DCBC62C2276CF3500E5EC6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DCBC62A2276CF3500E5EC6D /* KSMediaPickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DCBC6292276CF3500E5EC6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCBC6392276CF3500E5EC6D /* LaunchScreen.storyboard in Resources */,
+				6DCBC6A52276E01300E5EC6D /* KSMediaPicker.strings in Resources */,
+				6DCBC6362276CF3500E5EC6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DCBC6272276CF3500E5EC6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCBC6672276D00800E5EC6D /* KSMediaViewerPictureCell.swift in Sources */,
+				6DCBC6682276D00800E5EC6D /* KSMediaPickerView.swift in Sources */,
+				6DCBC65A2276D00800E5EC6D /* KSMediaPickerController.swift in Sources */,
+				6DCBC67D2276D13300E5EC6D /* KSMediaViewerController.m in Sources */,
+				6DCBC65D2276D00800E5EC6D /* KSMediaPickerItemModel.swift in Sources */,
+				6DCBC6602276D00800E5EC6D /* KSMediaPickerViewImageCell.swift in Sources */,
+				6DCBC66C2276D00800E5EC6D /* KSMediaPickerViewerView.swift in Sources */,
+				6DCBC67E2276D13300E5EC6D /* KSMediaViewerTransition.m in Sources */,
+				6DCBC6AA2276E0DC00E5EC6D /* KSExtension.swift in Sources */,
+				6DCBC68D2276D3B000E5EC6D /* KSVideoPlayerBaseView.m in Sources */,
+				6DCBC6652276D00800E5EC6D /* KSMediaPickerViewVideoCell.swift in Sources */,
+				6D2105AA2282AF76005A8BDE /* KSMediaPickerSelectIndicator.swift in Sources */,
+				6D2105A52282AB8B005A8BDE /* KSVideoPlayerLiteView.m in Sources */,
+				6DCBC6692276D00800E5EC6D /* KSMediaPickerRECButton.swift in Sources */,
+				6DCBC65C2276D00800E5EC6D /* KSMediaPickerOutputModel.swift in Sources */,
+				6DCBC6642276D00800E5EC6D /* KSMediaPickerViewAlbumCell.swift in Sources */,
+				6DCBC66B2276D00800E5EC6D /* KSMediaPickerHandlerBaseCell.swift in Sources */,
+				6DCBC69F2276DAAC00E5EC6D /* KSTriangleIndicatorButton.m in Sources */,
+				6DCBC6312276CF3500E5EC6D /* MDViewController.swift in Sources */,
+				6DCBC6A02276DAAC00E5EC6D /* KSIndicatorLabelControl.m in Sources */,
+				6DCBC6612276D00800E5EC6D /* KSMediaPickerCameraView.swift in Sources */,
+				6DCBC6622276D00800E5EC6D /* KSMediaPickerCameraToolBar.swift in Sources */,
+				6DCBC62F2276CF3500E5EC6D /* AppDelegate.swift in Sources */,
+				6DCBC65B2276D00800E5EC6D /* KSMediaPickerViewerController.swift in Sources */,
+				6D2105AE2282B55A005A8BDE /* KSPageControl.m in Sources */,
+				6DCBC65F2276D00800E5EC6D /* KSMediaPickerCollectionView.m in Sources */,
+				6DCBC6922276D65B00E5EC6D /* KSSegmentedControl.m in Sources */,
+				6DCBC6632276D00800E5EC6D /* KSMediaPickerPreviewView.swift in Sources */,
+				6DCBC68E2276D3B000E5EC6D /* KSVideoLayer.m in Sources */,
+				6DCBC65E2276D00800E5EC6D /* KSMediaPickerAlbumModel.swift in Sources */,
+				6DCBC67F2276D13300E5EC6D /* KSMediaViewerCell.m in Sources */,
+				6DCBC66A2276D00800E5EC6D /* KSMediaPickerNavigationView.swift in Sources */,
+				6D2105A022827BB7005A8BDE /* KSButton.swift in Sources */,
+				6DCBC6A12276DAAC00E5EC6D /* KSTriangleDisclosureIndicator.m in Sources */,
+				6DCBC6662276D00800E5EC6D /* KSMediaViewerVideoCell.swift in Sources */,
+				6DCBC6592276D00800E5EC6D /* KSMediaPickerHandlerController.swift in Sources */,
+				6DCBC6972276D99C00E5EC6D /* KSMediaPickerScrollView.m in Sources */,
+				6DCBC6802276D13300E5EC6D /* KSMediaViewerView.m in Sources */,
+				6D2105A2228282CA005A8BDE /* KSBorderButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6DCBC6372276CF3500E5EC6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DCBC6382276CF3500E5EC6D /* Base */,
+				6DCBC6A22276DF9D00E5EC6D /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6DCBC6A72276E01300E5EC6D /* KSMediaPicker.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DCBC6A62276E01300E5EC6D /* en */,
+				6DCBC6A82276E01500E5EC6D /* zh-Hans */,
+			);
+			name = KSMediaPicker.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DCBC63B2276CF3500E5EC6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DCBC63C2276CF3500E5EC6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DCBC63E2276CF3500E5EC6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4YZH76AUW;
+				INFOPLIST_FILE = KSMediaPickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinsun.KSMediaPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = KSMediaPickerDemo/MDBridgingHeader.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6DCBC63F2276CF3500E5EC6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F4YZH76AUW;
+				INFOPLIST_FILE = KSMediaPickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinsun.KSMediaPickerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = KSMediaPickerDemo/MDBridgingHeader.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DCBC6262276CF3500E5EC6D /* Build configuration list for PBXProject "KSMediaPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCBC63B2276CF3500E5EC6D /* Debug */,
+				6DCBC63C2276CF3500E5EC6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DCBC63D2276CF3500E5EC6D /* Build configuration list for PBXNativeTarget "KSMediaPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCBC63E2276CF3500E5EC6D /* Debug */,
+				6DCBC63F2276CF3500E5EC6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DCBC6232276CF3500E5EC6D /* Project object */;
+}

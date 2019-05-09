@@ -1,0 +1,22 @@
+/* 
+  KSMediaPicker.strings
+  KSMediaPickerDemo
+
+  Created by kinsun on 2019/4/29.
+  Copyright © 2019年 kinsun. All rights reserved.
+*/
+
+NEXT = "Next";
+
+IMAGE_PICKER_PHOTOS = "Photos";
+IMAGE_PICKER_CAMERA = "Camera";
+IMAGE_PICKER_MICROPHONE = "Microphone";
+IMAGE_PICKER_NONAUTHORITY_TITLE_FORMAT = "No authorization \"%@\" to access ";
+IMAGE_PICKER_NONAUTHORITY_TIP_FORMAT = "Please enter \"Settings\" - \"%@\" and turn on %@ switch.";
+IMAGE_PICKER_NONAUTHORITY_GO_SETTING = "Go Setting-Open";
+
+MEDIA_PICKER_SCALE_ASPECT_FIT = "Aspect Fit";
+MEDIA_PICKER_SCALE_ASPECT_FILL = "Aspect Fill";
+MEDIA_PICKER_ALBUM_TAB_TITLE = "Album";
+MEDIA_PICKER_CAMERA_TAB_TITLE = "Camera";
+MEDIA_PICKER_VIDEOCORDER_TAB_TITLE = "Videocorder";
