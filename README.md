@@ -31,8 +31,12 @@
 * demo中的所有文字可以在KSMediaPicker.strings 中更改
 
 ## KSMediaPicker的部分截图
-![pg1](https://github.com/kinsunlu/KSImagePickerDemo/blob/master/EG1.PNG?raw=true)
+![pg1](https://github.com/kinsunlu/KSMediaPicker/blob/master/EG_1.PNG?raw=false)
+![pg2](https://github.com/kinsunlu/KSMediaPicker/blob/master/EG_2.PNG?raw=false)
+![pg3](https://github.com/kinsunlu/KSMediaPicker/blob/master/EG_3.PNG?raw=false)
+![pg4](https://github.com/kinsunlu/KSMediaPicker/blob/master/EG_4.PNG?raw=false)
+![pg5](https://github.com/kinsunlu/KSMediaPicker/blob/master/EG_5.PNG?raw=false)
 
 ## KSMediaPicker的视频介绍
-点击查看[视频介绍](https://raw.githubusercontent.com/kinsunlu/KSImagePickerDemo/master/EGVideo.MP4)
+点击查看[视频介绍](https://raw.githubusercontent.com/kinsunlu/KSMediaPicker/master/EG_Video.MP4)
 
