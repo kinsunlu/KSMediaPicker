@@ -189,8 +189,8 @@
 		6DCBC6412276D00800E5EC6D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6DCBC6422276D00800E5EC6D /* KSMediaPickerHandlerController.swift */,
 				6DCBC6432276D00800E5EC6D /* KSMediaPickerController.swift */,
+				6DCBC6422276D00800E5EC6D /* KSMediaPickerHandlerController.swift */,
 				6DCBC6442276D00800E5EC6D /* KSMediaPickerViewerController.swift */,
 			);
 			path = Controller;
@@ -199,9 +199,9 @@
 		6DCBC6452276D00800E5EC6D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6DCBC6462276D00800E5EC6D /* KSMediaPickerOutputModel.swift */,
-				6DCBC6472276D00800E5EC6D /* KSMediaPickerItemModel.swift */,
 				6DCBC6482276D00800E5EC6D /* KSMediaPickerAlbumModel.swift */,
+				6DCBC6472276D00800E5EC6D /* KSMediaPickerItemModel.swift */,
+				6DCBC6462276D00800E5EC6D /* KSMediaPickerOutputModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

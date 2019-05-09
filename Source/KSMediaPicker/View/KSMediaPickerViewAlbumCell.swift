@@ -14,9 +14,8 @@ open class KSMediaPickerViewAlbumCell: UITableViewCell {
         didSet {
             let itemModel = albumModel.assetList.first
             if itemModel != nil {
-                weak var weakSelf = self
-                PHImageManager.default().requestImage(for: itemModel!.asset, targetSize: KSMediaPickerItemModel.thumbSize, contentMode: .aspectFill, options: KSMediaPickerItemModel.pictureViewerOptions) { (image, info) in
-                    weakSelf?.imageView?.image = image
+                PHImageManager.default().requestImage(for: itemModel!.asset, targetSize: KSMediaPickerItemModel.thumbSize, contentMode: .aspectFill, options: KSMediaPickerItemModel.pictureViewerOptions) {[weak self] (image, info) in
+                    self?.imageView?.image = image
                 }
                 textLabel?.text = albumModel.albumTitle
                 detailTextLabel?.text = String(albumModel.assetList.count)

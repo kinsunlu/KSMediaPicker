@@ -272,11 +272,10 @@ open class KSMediaPickerController: UIViewController, UICollectionViewDelegate, 
         let view = self.view as! KSMediaPickerView
         view.previewView.set(itemModel: itemModel, isStandard: isStandard)
         let collectionView = view.collectionView
-        weak var weakSelf = self
         collectionView.performBatchUpdates({
             collectionView.insertItems(at: [indexPath])
-        }) { (finished) in
-            let index = weakSelf?._add(itemModel: itemModel) ?? 0
+        }) {[weak self] (finished) in
+            let index = self?._add(itemModel: itemModel) ?? 0
             if index > 0 {
                 itemModel.index = index
             } else {

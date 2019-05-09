@@ -96,9 +96,8 @@ open class KSMediaPickerViewImageCell: UICollectionViewCell {
             isLoseFocus = itemModel.isLoseFocus
             let thumb = itemModel.thumb
             if thumb == nil {
-                weak var weakSelf = self
-                PHImageManager.default().requestImage(for: itemModel.asset, targetSize: KSMediaPickerItemModel.thumbSize, contentMode:.aspectFit , options: KSMediaPickerItemModel.pictureViewerOptions) { (image, info) in
-                    weakSelf?._updateThumb(image)
+                PHImageManager.default().requestImage(for: itemModel.asset, targetSize: KSMediaPickerItemModel.thumbSize, contentMode:.aspectFit , options: KSMediaPickerItemModel.pictureViewerOptions) {[weak self] (image, info) in
+                    self?._updateThumb(image)
                 }
             } else {
                 imageView.image = thumb

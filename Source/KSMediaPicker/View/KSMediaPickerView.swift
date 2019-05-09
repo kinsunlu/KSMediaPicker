@@ -313,19 +313,17 @@ open class KSMediaPickerView: UIView, KSMediaPickerScrollViewDelegate {
             let height = previewFrame.maxY
             _previewGestureCorrespondingArea!.size.height = height+20.0
             
-            weak var weakView = previewView
-            weak var weakSelf = self
             var topPoint: CGPoint? = nil
             let offsetY = -collectionView.contentOffset.y
             if offsetY > height {
                 topPoint = CGPoint(x: 0.0, y: -(height+3.0))
             }
-            UIView.animate(withDuration: 0.2, animations: {
-                weakView?.frame = previewFrame
+            UIView.animate(withDuration: 0.2, animations: {[weak self, weak previewView] in
+                previewView?.frame = previewFrame
                 guard let k_topPoint = topPoint else {
                     return
                 }
-                weakSelf?.collectionView.contentOffset = k_topPoint
+                self?.collectionView.contentOffset = k_topPoint
             })
             break
         default:
@@ -371,12 +369,10 @@ open class KSMediaPickerView: UIView, KSMediaPickerScrollViewDelegate {
         let height = previewFrame.maxY
         _previewGestureCorrespondingArea!.size.height = height+20.0
         
-        weak var weakView = previewView
-        weak var weakSelf = self
         let topPoint = CGPoint(x: 0.0, y: -(height+3.0))
-        UIView.animate(withDuration: 0.2, animations: {
-            weakView?.frame = previewFrame
-            weakSelf?.collectionView.contentOffset = topPoint
+        UIView.animate(withDuration: 0.2, animations: {[weak self, weak previewView] in
+            previewView?.frame = previewFrame
+            self?.collectionView.contentOffset = topPoint
         })
     }
     
