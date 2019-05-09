@@ -61,7 +61,7 @@ extension KSMediaPickerCameraToolBar {
         private var _lightContentStatusImageArray = [button.status: UIImage]()
         private var _darkContentStatusImageArray = [button.status: UIImage]()
         
-        public func set(image: UIImage, for status: button.status, of style: button.style) {
+        open func set(image: UIImage, for status: button.status, of style: button.style) {
             switch style {
             case .lightContent:
                 _lightContentStatusImageArray[status] = image
@@ -75,7 +75,7 @@ extension KSMediaPickerCameraToolBar {
             }
         }
         
-        public func image(of status: button.status, of style: KSMediaPickerCameraToolBar.button.style) -> UIImage? {
+        open func image(of status: button.status, of style: button.style) -> UIImage? {
             let array: [button.status: UIImage]
             switch style {
             case .lightContent:

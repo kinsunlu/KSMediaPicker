@@ -34,7 +34,7 @@ open class KSMediaPickerController: UIViewController, UICollectionViewDelegate, 
     @objc public let maxVideoItemCount: UInt
     @objc public let maxPictureItemCount: UInt
     @objc public let mediaType: KSMediaPickerController.mediaType
-    @objc open var delegate: KSMediaPickerControllerDelegate?
+    @objc open weak var delegate: KSMediaPickerControllerDelegate?
     
     /// 限制单一媒体类型混合显示构造函数，此函数为指定初始化器
     ///
