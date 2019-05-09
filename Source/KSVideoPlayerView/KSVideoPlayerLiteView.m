@@ -1,6 +1,6 @@
 //
 //  KSVideoPlayerLiteView.m
-//  pet
+// 
 //
 //  Created by kinsun on 2019/4/12.
 //

@@ -1,6 +1,6 @@
 //
 //  KSMediaPickerCollectionView.m
-//  pet
+// 
 //
 //  Created by kinsun on 2019/3/10.
 //

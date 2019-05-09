@@ -143,7 +143,7 @@ class MDViewController: UIViewController, KSMediaPickerControllerDelegate, UICol
         }
         alert.addAction(mix)
         let individual = UIAlertAction(title: "单一媒体类型选择", style: .default) {[weak self] (action) in
-            /// 两个参数都请不要传0，因为没处理单媒体类型录影合拍照的问题
+            /// 两个参数都请不要传0，因为没处理单媒体类型录影和拍照的问题
             let ctl = KSMediaPickerController(maxVideoItemCount: 1, maxPictureItemCount: 9)
             ctl.delegate = self
             let nav = KSNavigationController(rootViewController: ctl)

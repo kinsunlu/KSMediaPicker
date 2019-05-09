@@ -1,6 +1,6 @@
 //
 //  KSVideoPlayerBaseView.h
-//  pet
+// 
 //
 //  Created by kinsun on 2018/12/10.
 //  Copyright © 2018年 kinsun. All rights reserved.
