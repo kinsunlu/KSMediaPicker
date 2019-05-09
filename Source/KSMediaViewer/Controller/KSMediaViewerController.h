@@ -44,14 +44,14 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  主数据源，继承后自行处理其内容
  */
-@property (nonatomic, strong, readonly) NSArray *dataArray;
+@property (nonatomic, strong, readonly) NSArray <id> *dataArray;
 
 /**
  设置数据源，可重写此方法达到个性化需求
  @param dataArray 设置初始化时主数据源
  @param currentIndex 画面默认要展示第几条
  */
-- (void)setDataArray:(NSArray *)dataArray currentIndex:(NSInteger)currentIndex;
+- (void)setDataArray:(NSArray <id> *)dataArray currentIndex:(NSInteger)currentIndex;
 
 @property (nonatomic, readonly) __kindof KSMediaViewerCell *currentCell;
 /**

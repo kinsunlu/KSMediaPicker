@@ -181,7 +181,7 @@
     return frame;
 }
 
-- (void)setDataArray:(NSArray *)dataArray currentIndex:(NSInteger)currentIndex{
+- (void)setDataArray:(NSArray <id> *)dataArray currentIndex:(NSInteger)currentIndex{
     _dataArray = dataArray;
     self.currentIndex = currentIndex;
 }
