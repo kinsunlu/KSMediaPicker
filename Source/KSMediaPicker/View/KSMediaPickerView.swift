@@ -419,7 +419,7 @@ open class KSMediaPickerView: UIView, KSMediaPickerScrollViewDelegate {
                 return
             }
             let segmentedControl = self.segmentedControl
-            let page = UInt(ceil((offsetX-width*0.5)/width));
+            let page = UInt(ceil((offsetX-width*0.5)/width))
             if page != segmentedControl.selectedSegmentIndex {
                 segmentedControl.selectedSegmentIndex = page
             }
@@ -433,7 +433,7 @@ open class KSMediaPickerView: UIView, KSMediaPickerScrollViewDelegate {
             CATransaction.commit()
             let seg = self.segmentedControl as! KSMediaPickerView.segmentedControl
             let toolBar = cameraView.toolBar
-            let page = ceil((offsetX-width*0.5)/width);
+            let page = ceil((offsetX-width*0.5)/width)
             if page == 0.0 {
                 seg.style = .light
                 toolBar.style = .darkContent
@@ -455,7 +455,7 @@ open class KSMediaPickerView: UIView, KSMediaPickerScrollViewDelegate {
     }
     
     public func scrollViewDidEndScroll(_ scrollView: UIScrollView) {
-        let page = self.segmentedControl.selectedSegmentIndex;
+        let page = self.segmentedControl.selectedSegmentIndex
         if page == 0 {
             cameraView.stopRunning()
             if let callback = cameraView.toolBar.didChangedStyleCallback {

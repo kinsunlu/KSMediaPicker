@@ -52,7 +52,6 @@ extension UIView {
         return size
     }()
     
-    
     open var renderingImage: UIImage? {
         UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, 0.0)
         let image: UIImage?
@@ -95,8 +94,8 @@ extension UIImage {
         let newImageInfoRef = CFDictionaryCreateMutableCopy(kCFAllocatorDefault, CFDictionaryGetCount(imageInfoRef), imageInfoRef)!
         CFDictionaryReplaceValue(newImageInfoRef, pixelHeightKey, Unmanaged.passRetained(NSNumber(value: Double(viewH))).autorelease().toOpaque())
         CFDictionaryReplaceValue(newImageInfoRef, pixelWidthKey, Unmanaged.passRetained(NSNumber(value: Double(viewW))).autorelease().toOpaque())
-        CGImageDestinationAddImage(destination, newCgImage, newImageInfoRef);
-        CGImageDestinationFinalize(destination);
+        CGImageDestinationAddImage(destination, newCgImage, newImageInfoRef)
+        CGImageDestinationFinalize(destination)
         self.init(data: newImageData as Data)!
     }
     
@@ -104,10 +103,10 @@ extension UIImage {
         if let cgImage = self.cgImage {
             var newRect = rect
             let scale = self.scale
-            newRect.origin.x *= scale;
-            newRect.origin.y *= scale;
-            newRect.size.width *= scale;
-            newRect.size.height *= scale;
+            newRect.origin.x *= scale
+            newRect.origin.y *= scale
+            newRect.size.width *= scale
+            newRect.size.height *= scale
             
             if let newCgImage = cgImage.cropping(to: newRect) {
                 return UIImage(cgImage: newCgImage)
@@ -135,15 +134,15 @@ extension UIImage {
                 let width = floor(imageWidth*windowHeight/imageHeight)
                 rect = CGRect(x: (windowWidth-width)*0.5, y: 0.0, width: width, height: windowHeight)
             }
-            UIGraphicsBeginImageContextWithOptions(size, false, 0);
-            let context = UIGraphicsGetCurrentContext();
-            //        CGContextScaleCTM(context, scale, scale);
+            UIGraphicsBeginImageContextWithOptions(size, false, 0)
+            let context = UIGraphicsGetCurrentContext()
+            //        CGContextScaleCTM(context, scale, scale)
             context?.setFillColor(backgroundColor.cgColor)
             context?.addRect(CGRect(origin: .zero, size: size))
             context?.drawPath(using: .fill)
             draw(in: rect)
-            let newImage = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
+            let newImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
             return newImage
         }
     }

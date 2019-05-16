@@ -174,7 +174,7 @@ open class KSMediaPickerHandlerController: UIViewController, UICollectionViewDat
             let scaleWidth = imageSize.width/imageFrameSize.width
             let scaleHeight = imageSize.height/imageFrameSize.height
             let rect = CGRect(x: -(imageFrame.origin.x)*scaleWidth, y: -(imageFrame.origin.y)*scaleHeight, width: windowWidth*scaleWidth, height: windowSize.height*scaleHeight)
-            let outputImageSize = CGSize(width: 720.0, height: windowSize.height*720.0/windowSize.width);
+            let outputImageSize = CGSize(width: 720.0, height: windowSize.height*720.0/windowSize.width)
             k_image = image.cut(from: rect)?.aspectFit(from: outputImageSize, backgroundColor: .lightGray)
         }
         return k_image

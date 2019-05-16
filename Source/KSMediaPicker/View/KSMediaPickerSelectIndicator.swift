@@ -30,10 +30,10 @@ extension KSMediaPickerViewImageCell {
         private let _selectLayer = {() -> CALayer in
             let selectLayer = CALayer()
             selectLayer.backgroundColor = UIColor.ks_main.cgColor
-            selectLayer.borderColor = UIColor.ks_white.cgColor;
-            selectLayer.borderWidth = 1.0;
-            selectLayer.masksToBounds = true;
-            selectLayer.isHidden = true;
+            selectLayer.borderColor = UIColor.ks_white.cgColor
+            selectLayer.borderWidth = 1.0
+            selectLayer.masksToBounds = true
+            selectLayer.isHidden = true
             return selectLayer
         }()
         
@@ -77,7 +77,7 @@ extension KSMediaPickerViewImageCell {
             if isMultipleSelected {
                 viewH = _textLayer.fontSize
                 viewX = 0.0
-                viewY = (22.0-viewH)*0.5-1.0;
+                viewY = (22.0-viewH)*0.5-1.0
                 _textLayer.frame = CGRect(x: viewX, y: viewY, width: viewW, height: viewH)
             }
         }

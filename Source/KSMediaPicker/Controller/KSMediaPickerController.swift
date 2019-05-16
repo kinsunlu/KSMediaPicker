@@ -150,7 +150,7 @@ open class KSMediaPickerController: UIViewController, UICollectionViewDelegate, 
                         DispatchQueue.global().async {
                             let assetCollections = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .any, options: nil)
                             let regularAssetCollections = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .albumRegular, options: nil)
-                            let array = [assetCollections, regularAssetCollections];
+                            let array = [assetCollections, regularAssetCollections]
                             self?._set(assetData: array)
                         }
                     }, cancelHandler: cancelHandler)
@@ -516,7 +516,7 @@ open class KSMediaPickerController: UIViewController, UICollectionViewDelegate, 
         if cell == nil {
             cell = KSMediaPickerViewAlbumCell(style: .subtitle, reuseIdentifier: iden)
         }
-        cell?.albumModel = _albumList?[indexPath.row];
+        cell?.albumModel = _albumList?[indexPath.row]
         return cell!
     }
     
