@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class KSMediaViewerCell;
-@interface KSMediaViewerController : UIViewController <UICollectionViewDelegate>
+@interface KSMediaViewerController <__covariant DataType> : UIViewController <UICollectionViewDelegate>
 
 @property (nonatomic, strong) __kindof KSMediaViewerView *view;
 
@@ -44,14 +44,14 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  主数据源，继承后自行处理其内容
  */
-@property (nonatomic, strong, readonly) NSArray <id> *dataArray;
+@property (nonatomic, strong, readonly) NSArray <DataType> *dataArray;
 
 /**
  设置数据源，可重写此方法达到个性化需求
  @param dataArray 设置初始化时主数据源
  @param currentIndex 画面默认要展示第几条
  */
-- (void)setDataArray:(NSArray <id> *)dataArray currentIndex:(NSInteger)currentIndex;
+- (void)setDataArray:(NSArray <DataType> *)dataArray currentIndex:(NSInteger)currentIndex;
 
 @property (nonatomic, readonly) __kindof KSMediaViewerCell *currentCell;
 /**
@@ -70,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param indexPath 返回cell所在的indexPath
  @param collectionView 当前主collectionView
  */
-- (KSMediaViewerCell *)mediaViewerCellAtIndexPath:(NSIndexPath *)indexPath data:(id)data ofCollectionView:(UICollectionView *)collectionView;
+- (KSMediaViewerCell *)mediaViewerCellAtIndexPath:(NSIndexPath *)indexPath data:(DataType)data ofCollectionView:(UICollectionView *)collectionView;
 
 - (void)mediaViewerCellWillBeganPan;
 - (void)mediaViewerCellDidSwipe;

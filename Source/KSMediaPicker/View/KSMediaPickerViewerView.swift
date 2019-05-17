@@ -11,7 +11,7 @@ open class KSMediaPickerViewerView: KSMediaViewerView {
 
     public let pageControl = {() -> KSPageControl in
         let pageControl = KSPageControl()
-        pageControl.toMuchEgdeMargin = 18.0
+        pageControl.tooMuchEgdeMargin = 18.0
         pageControl.tintColor = .ks_white
         return pageControl
     }()

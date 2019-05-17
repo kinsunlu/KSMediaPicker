@@ -52,6 +52,6 @@ open class KSMediaViewerVideoCell: KSMediaViewerCell {
             let scrollView = self.scrollView else {
                 return .zero
         }
-        return KSMediaViewerController.transitionThumbViewFrame(inSuperView: scrollView, at: k_data.thumb)
+        return KSMediaViewerController<AnyObject>.transitionThumbViewFrame(inSuperView: scrollView, at: k_data.thumb)
     }
 }

@@ -63,6 +63,6 @@ open class KSMediaViewerPictureCell: KSMediaViewerCell {
             let scrollView = self.scrollView else {
                 return .zero
         }
-        return KSMediaViewerController.transitionThumbViewFrame(inSuperView: scrollView, at: imageView.image)
+        return KSMediaViewerController<AnyObject>.transitionThumbViewFrame(inSuperView: scrollView, at: imageView.image)
     }
 }

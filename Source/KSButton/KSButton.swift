@@ -33,32 +33,20 @@ open class KSButton: UIButton {
     }
 
     open override var isEnabled: Bool {
-        set {
-            super.isEnabled = newValue
+        didSet {
             backgroundColor = backgroundColor(for: state) ?? backgroundColor(for: .normal)
-        }
-        get {
-            return super.isEnabled
         }
     }
     
     open override var isHighlighted: Bool {
-        set {
-            super.isHighlighted = newValue
+        didSet {
             backgroundColor = backgroundColor(for: state) ?? backgroundColor(for: .normal)
-        }
-        get {
-            return super.isHighlighted
         }
     }
     
     open override var isSelected: Bool {
-        set {
-            super.isSelected = newValue
+        didSet {
             backgroundColor = backgroundColor(for: state) ?? backgroundColor(for: .normal)
-        }
-        get {
-            return super.isSelected
         }
     }
 }

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger numberOfPages;
 @property (nonatomic, assign) NSInteger currentPage;
-@property (nonatomic, assign) CGFloat toMuchEgdeMargin;
+@property (nonatomic, assign) CGFloat tooMuchEgdeMargin;
 
 - (void)updatePageControlWithScrollView:(UIScrollView *)scrollView;
 

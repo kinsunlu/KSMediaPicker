@@ -45,32 +45,20 @@ open class KSBorderButton: KSButton {
     }
     
     open override var isEnabled: Bool {
-        set {
-            super.isEnabled = newValue
+        didSet {
             layer.borderColor = _borderColor(for: state) ?? _borderColor(for: .normal)
-        }
-        get {
-            return super.isEnabled
         }
     }
     
     open override var isHighlighted: Bool {
-        set {
-            super.isHighlighted = newValue
+        didSet {
             layer.borderColor = _borderColor(for: state) ?? _borderColor(for: .normal)
-        }
-        get {
-            return super.isHighlighted
         }
     }
     
     open override var isSelected: Bool {
-        set {
-            super.isSelected = newValue
+        didSet {
             layer.borderColor = _borderColor(for: state) ?? _borderColor(for: .normal)
-        }
-        get {
-            return super.isSelected
         }
     }
 

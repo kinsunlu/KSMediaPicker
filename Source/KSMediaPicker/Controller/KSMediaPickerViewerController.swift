@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class KSMediaPickerViewerController: KSMediaViewerController {
+open class KSMediaPickerViewerController: KSMediaViewerController<KSMediaPickerOutputModel> {
     
     static private let k_class_picture = KSMediaViewerPictureCell.self
     static private let k_iden_picture = NSStringFromClass(k_class_picture)
@@ -23,10 +23,9 @@ open class KSMediaPickerViewerController: KSMediaViewerController {
         return view
     }
     
-    override open func mediaViewerCell(at indexPath: IndexPath, data: Any, of collectionView: UICollectionView) -> KSMediaViewerCell {
-        let k_data = data as! KSMediaPickerOutputModel
+    override open func mediaViewerCell(at indexPath: IndexPath, data: KSMediaPickerOutputModel, of collectionView: UICollectionView) -> KSMediaViewerCell {
         let classObj = KSMediaPickerViewerController.self
-        let iden = k_data.mediaType == .image ? classObj.k_iden_picture : classObj.k_iden_video
+        let iden = data.mediaType == .image ? classObj.k_iden_picture : classObj.k_iden_video
         return collectionView.dequeueReusableCell(withReuseIdentifier: iden, for: indexPath) as! KSMediaViewerCell
     }
     
@@ -39,7 +38,7 @@ open class KSMediaPickerViewerController: KSMediaViewerController {
         (view as! KSMediaPickerViewerView).pageControl.update(with: scrollView)
     }
     
-    @objc override open func setDataArray(_ dataArray: [Any], currentIndex: Int) {
+    @objc override open func setDataArray(_ dataArray: [KSMediaPickerOutputModel], currentIndex: Int) {
         super.setDataArray(dataArray, currentIndex: currentIndex)
         let pageControl = (view as! KSMediaPickerViewerView).pageControl
         let count = dataArray.count
@@ -52,6 +51,6 @@ open class KSMediaPickerViewerController: KSMediaViewerController {
     }
     
     override open var currentThumb: UIImage? {
-        return (dataArray as! [KSMediaPickerOutputModel])[currentIndex].thumb
+        return dataArray[currentIndex].thumb
     }
 }

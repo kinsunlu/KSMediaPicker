@@ -36,7 +36,7 @@
 @interface KSPageControl ()
 
 @property (nonatomic, strong) NSMutableArray <_KSPageControlPoint *> *_pointArray;
-@property (nonatomic, assign, getter=_isToMuch) BOOL _toMuch;
+@property (nonatomic, assign, getter=_isTooMuch, setter=_setTooMuch:) BOOL _tooMuch;
 
 @end
 
@@ -54,13 +54,14 @@
     
     BOOL _isNeedLayout;
 }
+@synthesize _tooMuch = k_tooMuch;
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.userInteractionEnabled = NO;
         _isNeedLayout = YES;
         _currentPage = 0;
-        _toMuchEgdeMargin = 20.f;
+        _tooMuchEgdeMargin = 20.f;
         
         UIView *toMuchLine = [[UIView alloc] init];
         toMuchLine.alpha = 0.2f;
@@ -79,7 +80,7 @@
     if (_isNeedLayout) {
         k_creatFrameElement;
         CGFloat normalW = _normalW, selectedW = _selectedW, egdeMargin = _egdeMargin;
-        if (self._isToMuch) {
+        if (self._isTooMuch) {
             k_creatSelfSizeElement;
             CGFloat lineW = windowWidth-egdeMargin*2.f;
             viewX = egdeMargin; viewW = lineW; viewH = 1.5f; viewY = (windowHeight-viewH)*0.5f;
@@ -124,12 +125,12 @@
     
     _selectedW = selectedW;
     _normalW = normalW;
-    CGFloat minMargin = _toMuchEgdeMargin;
+    CGFloat minMargin = _tooMuchEgdeMargin;
     if (egdeMargin < minMargin) {
-        self._toMuch = YES;
+        self._tooMuch = YES;
         _egdeMargin = minMargin;
     } else {
-        self._toMuch = NO;
+        self._tooMuch = NO;
         _pointMargin = margin;
         _egdeMargin = egdeMargin;
         _actionZone = normalW+selectedW;
@@ -140,7 +141,7 @@
     if (_numberOfPages != numberOfPages) {
         _numberOfPages = numberOfPages;
         [self _updateLayoutElement];
-        if (!self._isToMuch) {
+        if (!self._isTooMuch) {
             NSMutableArray <_KSPageControlPoint *> *pointArray = self._pointArray;
             if (pointArray.count > 0) {
                 for (_KSPageControlPoint *point in pointArray) {
@@ -159,9 +160,9 @@
     }
 }
 
-- (void)set_toMuch:(BOOL)toMuch {
-    __toMuch = toMuch;
-    BOOL hidden = !toMuch;
+- (void)_setTooMuch:(BOOL)tooMuch {
+    k_tooMuch = tooMuch;
+    BOOL hidden = !tooMuch;
     _toMuchPoint.hidden = hidden;
     _toMuchLine.hidden = hidden;
 }
@@ -202,7 +203,7 @@
         scrollViewW = scrollView.bounds.size.width;
         NSInteger index = offsetX/scrollViewW;
         _currentPage = index;
-        if (self._isToMuch) {
+        if (self._isTooMuch) {
             CGRect frame = _toMuchPoint.frame;
             frame.origin.x = offsetX*_lineMaxW/(contentSizeW-scrollViewW)+_toMuchLine.frame.origin.x;
             _toMuchPoint.frame = frame;
