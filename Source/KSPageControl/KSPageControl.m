@@ -7,7 +7,6 @@
 //
 
 #import "KSPageControl.h"
-#import "KSMediaPickerDemo-Swift.h"
 
 @interface _KSPageControlPoint : UIView
 

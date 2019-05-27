@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window.rootViewController = MDViewController()
+//        window.rootViewController = MDOCViewController() //OC实现
         window.makeKeyAndVisible()
         
         return true
