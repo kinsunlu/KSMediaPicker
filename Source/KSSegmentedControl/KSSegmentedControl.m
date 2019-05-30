@@ -27,13 +27,11 @@
 }
 
 - (void)setNormalColor:(CGColorRef)normalColor {
-    if (_normalColor != NULL) CGColorRelease(_normalColor);
     _normalColor = normalColor;
     if (!_selected) self.foregroundColor = normalColor;
 }
 
 - (void)setSelectedColor:(CGColorRef)selectedColor {
-    if (_selectedColor != NULL) CGColorRelease(_selectedColor);
     _selectedColor = selectedColor;
     if (_selected) self.foregroundColor = selectedColor;
 }
@@ -41,11 +39,6 @@
 - (void)setSelected:(BOOL)selected {
     _selected = selected;
     self.foregroundColor = selected ? _selectedColor : _normalColor;
-}
-
-- (void)dealloc {
-    if (_normalColor != NULL) CGColorRelease(_normalColor);
-    if (_selectedColor != NULL) CGColorRelease(_selectedColor);
 }
 
 @end
