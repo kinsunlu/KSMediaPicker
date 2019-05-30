@@ -20,9 +20,10 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+    k_creatSelfSizeElement;
     k_creatFrameElement;
     viewW = 7.f; viewH = viewW*0.7f;
-    viewX = self.bounds.size.width-viewW; viewY = (self.bounds.size.height-viewH)*0.5f;
+    viewX = windowWidth-viewW; viewY = (windowHeight-viewH)*0.5f;
     k_settingFrame(_indicatorIconView);
 }
 
@@ -63,8 +64,9 @@
             rotation = -M_PI_2;
             break;
     }
+    __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.2f animations:^{
-        self->_indicatorIconView.transform = CGAffineTransformMakeRotation(rotation);
+        weakSelf.indicatorIconView.transform = CGAffineTransformMakeRotation(rotation);
     }];
 }
 

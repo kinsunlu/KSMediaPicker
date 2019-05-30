@@ -8,6 +8,10 @@
 import UIKit
 
 open class KSMediaPickerViewerView: KSMediaViewerView {
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     public let pageControl = {() -> KSPageControl in
         let pageControl = KSPageControl()
@@ -16,11 +20,11 @@ open class KSMediaPickerViewerView: KSMediaViewerView {
         return pageControl
     }()
     
-    override open func initView() {
-        super.initView()
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
         addSubview(pageControl)
     }
-
+    
     override open func layoutSubviews() {
         super.layoutSubviews()
         let windowSize = bounds.size

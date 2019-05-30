@@ -31,12 +31,12 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        [self initView];
+        [self _initView];
     }
     return self;
 }
 
-- (void)initView {
+- (void)_initView {
     _isFirstLayout = YES;
     
     UIColor *clearColor = UIColor.clearColor;

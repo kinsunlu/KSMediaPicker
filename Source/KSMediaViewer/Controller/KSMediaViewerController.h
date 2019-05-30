@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class KSMediaViewerCell;
+/**
+ DataType 为主数据源数组中项目对象的类型，例如 UIImage对象
+ */
 @interface KSMediaViewerController <__covariant DataType> : UIViewController <UICollectionViewDelegate>
 
 @property (nonatomic, strong) __kindof KSMediaViewerView *view;

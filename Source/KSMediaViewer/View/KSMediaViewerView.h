@@ -15,8 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak, readonly) UIView *barrierView;
 @property (nonatomic, weak, readonly) UICollectionView *collectionView;
 
-- (void)initView;
-
 @end
 
 NS_ASSUME_NONNULL_END

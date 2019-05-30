@@ -47,8 +47,8 @@
     CGFloat _actionZone;
     CGFloat _beforOffsetX;
     
-    __weak UIView *_toMuchLine;
-    __weak _KSPageControlPoint *_toMuchPoint;
+    __weak UIView *_tooMuchLine;
+    __weak _KSPageControlPoint *_tooMuchPoint;
     CGFloat _lineMaxW;
     
     BOOL _isNeedLayout;
@@ -62,14 +62,14 @@
         _currentPage = 0;
         _tooMuchEgdeMargin = 20.f;
         
-        UIView *toMuchLine = [[UIView alloc] init];
-        toMuchLine.alpha = 0.2f;
-        [self addSubview:toMuchLine];
-        _toMuchLine = toMuchLine;
+        UIView *tooMuchLine = [[UIView alloc] init];
+        tooMuchLine.alpha = 0.2f;
+        [self addSubview:tooMuchLine];
+        _tooMuchLine = tooMuchLine;
         
-        _KSPageControlPoint *toMuchPoint = [[_KSPageControlPoint alloc] init];
-        [self addSubview:toMuchPoint];
-        _toMuchPoint = toMuchPoint;
+        _KSPageControlPoint *tooMuchPoint = [[_KSPageControlPoint alloc] init];
+        [self addSubview:tooMuchPoint];
+        _tooMuchPoint = tooMuchPoint;
     }
     return self;
 }
@@ -83,12 +83,12 @@
             k_creatSelfSizeElement;
             CGFloat lineW = windowWidth-egdeMargin*2.f;
             viewX = egdeMargin; viewW = lineW; viewH = 1.5f; viewY = (windowHeight-viewH)*0.5f;
-            k_settingFrame(_toMuchLine);
+            k_settingFrame(_tooMuchLine);
             viewH = normalW; viewW = selectedW; viewY = 0.f;
             CGFloat maxWidth = lineW-viewW;
             _lineMaxW = maxWidth;
             viewX = maxWidth/(_numberOfPages-1)*_currentPage+egdeMargin;
-            k_settingFrame(_toMuchPoint);
+            k_settingFrame(_tooMuchPoint);
         } else {
             NSArray <_KSPageControlPoint *> *pointArray = self._pointArray;
             if (_numberOfPages > 0 && _numberOfPages == pointArray.count) {
@@ -162,8 +162,8 @@
 - (void)_setTooMuch:(BOOL)tooMuch {
     k_tooMuch = tooMuch;
     BOOL hidden = !tooMuch;
-    _toMuchPoint.hidden = hidden;
-    _toMuchLine.hidden = hidden;
+    _tooMuchPoint.hidden = hidden;
+    _tooMuchLine.hidden = hidden;
 }
 
 - (void)setTintColor:(UIColor *)tintColor {
@@ -174,8 +174,8 @@
             point.backgroundColor = tintColor;
         }
     }
-    _toMuchLine.backgroundColor = tintColor;
-    _toMuchPoint.backgroundColor = tintColor;
+    _tooMuchLine.backgroundColor = tintColor;
+    _tooMuchPoint.backgroundColor = tintColor;
 }
 
 - (void)setAlpha:(CGFloat)alpha {
@@ -203,9 +203,9 @@
         NSInteger index = offsetX/scrollViewW;
         _currentPage = index;
         if (self._isTooMuch) {
-            CGRect frame = _toMuchPoint.frame;
-            frame.origin.x = offsetX*_lineMaxW/(contentSizeW-scrollViewW)+_toMuchLine.frame.origin.x;
-            _toMuchPoint.frame = frame;
+            CGRect frame = _tooMuchPoint.frame;
+            frame.origin.x = offsetX*_lineMaxW/(contentSizeW-scrollViewW)+_tooMuchLine.frame.origin.x;
+            _tooMuchPoint.frame = frame;
         } else {
             NSInteger toIndex = index+1;
             _KSPageControlPoint *leftPoint = [self _getPointViewOfIndex:index];
