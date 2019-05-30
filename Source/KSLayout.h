@@ -12,14 +12,12 @@
 #define k_setFrame              (CGRect){viewX, viewY, viewW, viewH}
 #define k_settingFrame(view)    (view).frame = k_setFrame
 #define k_creatWindowSizeElement(width, height) CGFloat windowWidth = (width), windowHeight = (height)
-
-#define k_creatSelfSizeElement CGSize size = self.bounds.size;\
-k_creatWindowSizeElement(size.width, size.height)
-
 #define k_creatSizeElementOfSize(size)  k_creatWindowSizeElement((size).width, (size).height)
+#define k_creatSelfSizeElement CGSize kkkk_size = self.bounds.size;\
+k_creatSizeElementOfSize(kkkk_size)
 
 //全局屏幕相关
-#define k_MAIN_SCREEN   [UIScreen mainScreen]
+#define k_MAIN_SCREEN   UIScreen.mainScreen
 #define k_SCREEN_BOUNDS k_MAIN_SCREEN.bounds
 #define k_SCREEN_WIDTH  k_SCREEN_BOUNDS.size.width
 #define k_SCREEN_HEIGHT k_SCREEN_BOUNDS.size.height

@@ -149,6 +149,7 @@ static NSString * const _MDOCViewPreviewCellIden = @"_MDOCViewPreviewCell";
     UIAlertAction *mix = [UIAlertAction actionWithTitle:@"混合选择" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         KSMediaPickerController *ctl = [KSMediaPickerController.alloc initWithMaxItemCount:16];
         ctl.delegate = weakSelf;
+//        ctl.automaticallyAdjustsScrollViewInsets = NO;
         KSNavigationController *nav = [KSNavigationController.alloc initWithRootViewController:ctl];
         [weakSelf presentViewController:nav animated:YES completion:nil];
     }];
