@@ -21,6 +21,7 @@ open class KSMediaPickerItemModel: NSObject {
         options.resizeMode = .none
         // 同步获得图片, 只会返回1张图片
         options.isSynchronous = true
+        options.isNetworkAccessAllowed = true;
         return options
     }()
     
@@ -28,6 +29,7 @@ open class KSMediaPickerItemModel: NSObject {
         let options = PHImageRequestOptions()
         options.resizeMode = .none
         options.isSynchronous = false
+        options.isNetworkAccessAllowed = true;
         return options
     }()
     
@@ -35,6 +37,7 @@ open class KSMediaPickerItemModel: NSObject {
         let options = PHVideoRequestOptions()
         options.version = .current
         options.deliveryMode = .automatic
+        options.isNetworkAccessAllowed = true;
         return options
     }()
     

@@ -85,7 +85,7 @@ open class KSMediaPickerController: UIViewController, UICollectionViewDelegate, 
 //        self.init(mediaType: mediaType, maxItemCount: maxItemCount)
 //    }
     
-    required public init?(coder aDecoder: NSCoder) {
+    @nonobjc required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
