@@ -211,8 +211,11 @@
 }
 
 - (void)setIndndicatorColor:(UIColor *)indndicatorColor {
-    _indndicatorColor = indndicatorColor;
     _indLayer.backgroundColor = indndicatorColor.CGColor;
+}
+
+- (UIColor *)indndicatorColor {
+    return [UIColor colorWithCGColor:_indLayer.backgroundColor];
 }
 
 - (void)updateIndicatorProportion:(CGFloat)proportion {

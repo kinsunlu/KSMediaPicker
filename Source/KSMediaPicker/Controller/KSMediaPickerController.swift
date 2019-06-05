@@ -227,14 +227,6 @@ open class KSMediaPickerController: UIViewController, UICollectionViewDelegate, 
         }
     }
     
-    private func _previewViewDidChanedSize(isClips: Bool) {
-        for item in _selectedAssetArray {
-            let k_item = item as! KSMediaPickerItemModel
-            k_item.contentOffset = nil
-            k_item.zoomScale = nil
-        }
-    }
-    
     private func _didTakePhotoFinish(cameraView: KSMediaPickerCameraView, image: UIImage) {
         var createdAssetID: String? = nil
         try? PHPhotoLibrary.shared().performChangesAndWait {
